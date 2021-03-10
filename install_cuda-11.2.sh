@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage:
-# curl <url to this script> | bash -s <prefix>
+# curl https://raw.githubusercontent.com/gen-ko/gpu-setup/main/install_cuda-11.2.sh | bash -s <prefix>
 
 CUDA_VERSION=11.2
 TMP_DIR=/tmp/cuda-download-${CUDA_VERSION}

@@ -11,6 +11,6 @@ PREFIX=$1
 mkdir -p ${TMP_DIR} && \
 pushd ${TMP_DIR} && \
 wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh && \
-bash Anaconda-latest-Linux-x86_64.sh -p ${PREFIX} && \
+bash Anaconda3-2020.11-Linux-x86_64.sh -p ${PREFIX} && \
 popd && \
 rm -rf ${TMP_DIR}

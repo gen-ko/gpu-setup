@@ -8,9 +8,9 @@
 TMP_DIR=/tmp/conda-download
 PREFIX=$1
 
-mkdir -p ${TMP_DIR} && \
+mkdir -p ${TMP_DIR}
 pushd ${TMP_DIR} && \
 wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh && \
 bash Anaconda3-2020.11-Linux-x86_64.sh -p ${PREFIX} && \
-popd && \
+popd
 rm -rf ${TMP_DIR}

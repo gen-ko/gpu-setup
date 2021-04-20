@@ -6,10 +6,9 @@
 
 TMP_DIR=/tmp/libheif-download
 PREFIX=$1
-CPATH=${PREFIX}/libheif/include:${CPATH}
-LIBRARY_PATH=${PREFIX}/libheif/lib:${LIBRARY_PATH}
-LD_LIBRARY_PATH=${PREFIX}/libheif/lib:${LD_LIBRARY_PATH}
-
+CPATH=${PREFIX}/libheif/include:${CPATH} \
+LIBRARY_PATH=${PREFIX}/libheif/lib:${LIBRARY_PATH} \
+LD_LIBRARY_PATH=${PREFIX}/libheif/lib:${LD_LIBRARY_PATH} \
 rm -rf ${TMP_DIR} && \
 mkdir -p ${TMP_DIR} && \
 pushd ${TMP_DIR} && \

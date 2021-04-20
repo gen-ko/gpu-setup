@@ -19,6 +19,7 @@ CUDA_RUNFILE_MAP['11.1']=cuda_11.1.0_455.23.05_linux.run
 
 mkdir -p ${TMP_DIR} && \
 pushd ${TMP_DIR} && \
+echo "wget from ${CUDA_VERSION_MAP[$CUDA_VERSION]}"
 wget ${CUDA_VERSION_MAP[$CUDA_VERSION]} && \
 bash ${CUDA_RUNFILE_MAP[$CUDA_VERSION]} --silent --toolkit --installpath=${PREFIX}/cuda-${CUDA_VERSION} && \
 popd && \

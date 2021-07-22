@@ -23,4 +23,4 @@ rm -rf ${TMP_DIR} && \
 CPATH=${PREFIX}/libheif/include:${CPATH} \
 LIBRARY_PATH=${PREFIX}/libheif/lib:${LIBRARY_PATH} \
 LD_LIBRARY_PATH=${PREFIX}/libheif/lib:${LD_LIBRARY_PATH} \
-pip install 'git+https://github.com/david-poirier-csn/pyheif.git@8d03e0bf6dde6aa0317471792d698a30502f9e1d'
+pip install 'git+https://github.com/carsales/pyheif.git@8d03e0bf6dde6aa0317471792d698a30502f9e1d'
